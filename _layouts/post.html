@@ -18,16 +18,6 @@ layout: default
     <!-- titles -->
 
     <!-- posts -->
-      {% for x in page.questions %}
-        <div class="flex-basis-400 flex-grow-5">
-          <div class="" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">
-            <h2 class="list-post-title">
-            {{x.plyr}}
-            </h2>
-          </div>
-        </div>
-      {% endfor %}
-
     <div class="margin-top-20 margin-bottom-50">
       {% for x in page.questions %}
       <div class="list-item-2 container wrap-reverse align-items-end justify-content-center" data-aos="fade-up" data-aos-delay="0" data-aos-offset="0">
@@ -47,6 +37,7 @@ layout: default
               {{x.answer}}
             </span>
           </div>
+              {{x.plyr}}
         </div>
       </div>
       {% endfor %}
