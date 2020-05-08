@@ -1,6 +1,8 @@
 {% include head.html %}
 
 <body>
+<link rel="stylesheet" href="https://cdn.plyr.io/3.5.1/plyr.css"/>
+
   <div class="">
     {% include menu.html %}
 
@@ -22,8 +24,6 @@
       json: '{{ site.baseurl }}/search.json'
     })
   </script>
-
-<link rel="stylesheet" href="https://cdn.plyr.io/3.5.1/plyr.css"/>
 
 <script src="https://cdn.plyr.io/3.5.1/plyr.js"></script>
 <script>/*<![CDATA[*/const players = Array.from(document.querySelectorAll('.js-player')).map(player => new Plyr(player));/*]]>*/</script>
