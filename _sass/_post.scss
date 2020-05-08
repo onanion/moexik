@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="https://cdn.plyr.io/3.5.1/plyr.css"/>
+
 .content-post {
   min-height: calc(100vh - 480px);
   background: #f3f5f7;
@@ -90,3 +92,6 @@ color:#fff;
 border:2px solid #000;
 background-color:#000;
 }
+
+<script src="https://cdn.plyr.io/3.5.1/plyr.js"></script>
+<script>/*<![CDATA[*/const players = Array.from(document.querySelectorAll('.js-player')).map(player => new Plyr(player));/*]]>*/</script>
