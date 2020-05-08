@@ -75,3 +75,18 @@
       }
    }
 }
+
+.ut {
+color:#000;
+background:#fff;
+padding:6px 15px;
+border:2px solid #000;
+-webkit-transition: .3s;
+transition: .3s;
+font-size:12.5px;
+}
+.ut:hover{
+color:#fff;
+border:2px solid #000;
+background-color:#000;
+}
