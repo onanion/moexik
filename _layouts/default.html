@@ -1,27 +1,27 @@
 {% include head.html %}
 
 <body>
-  <div class="">
-    {% include menu.html %}
+<div class="">
+{% include menu.html %}
 
-    {{ content }}
+{{ content }}
 
-    {% include footer.html %}
-  </div>
-  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-  <script src="{{ site.baseurl }}/assets/js/simple-jekyll-search.min.js"></script>
+{% include footer.html %}
+</div>
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<script src="{{ site.baseurl }}/assets/js/simple-jekyll-search.min.js"></script>
   
-  <script>
-    AOS.init({
-      once: true
-    });
+<script>
+AOS.init({
+once: true
+});
 
-    SimpleJekyllSearch({
-      searchInput: document.getElementById('search-input'),
-      resultsContainer: document.getElementById('results-container'),
-      json: '{{ site.baseurl }}/search.json'
-    })
-  </script>
+SimpleJekyllSearch({
+searchInput: document.getElementById('search-input'),
+resultsContainer: document.getElementById('results-container'),
+json: '{{ site.baseurl }}/search.json'
+})
+</script>
 
 <script src="https://cdn.plyr.io/3.5.1/plyr.js"></script>
 <script>/*<![CDATA[*/const players = Array.from(document.querySelectorAll('.js-player')).map(player => new Plyr(player));/*]]>*/</script>
